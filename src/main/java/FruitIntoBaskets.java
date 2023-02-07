@@ -26,6 +26,34 @@ public class FruitIntoBaskets {
     }
 
 
+    /*
+    slide
+    public int totalFruit(int[] fruits) {
+    int maxFruits = 0, i = 0;
+    int[] fruitCount = new int[fruits.length];
+    for (int j = 0; j < fruits.length; j++) {
+        fruitCount[fruits[j]]++;
+        while (fruitCount[fruits[j]] > 0 && getDistinctCount(fruitCount) > 2) {
+            fruitCount[fruits[i]]--;
+            i++;
+        }
+        maxFruits = Math.max(maxFruits, j - i + 1);
+    }
+    return maxFruits;
+}
+
+private int getDistinctCount(int[] fruitCount) {
+    int count = 0;
+    for (int i = 0; i < fruitCount.length; i++) {
+        if (fruitCount[i] > 0) {
+            count++;
+        }
+    }
+    return count;
+}
+     */
+
+
     public static void main(String[] args) {
         FruitIntoBaskets f = new FruitIntoBaskets();
         System.out.println(f.totalFruit(new int[]{3, 3, 3, 1, 2, 1, 1, 2, 3, 3, 4}));
